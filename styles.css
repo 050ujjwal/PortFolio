@@ -8,10 +8,11 @@
 
 
 .sidebar {
-    background-color: rgb(142, 138, 138);
-    width: 434px;
-    height: 100vh;
+    position: absolute;
+    background-color: rgb(223, 218, 218);
     font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
 }
 
 .sidebar nav {
@@ -48,9 +49,11 @@
     display: flex;
     justify-content: space-around;
     font-family: 'Source Code Pro', monospace;
+    color: rgb(186, 14, 14);
 }
 
 .devInfo {
+    font-size: 16px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -58,27 +61,28 @@
 }
 
 .hello {
-    font-size: 50px;
+    font-size: 3em;
 }
 
 .name {
-    font-size: 45px;
+    font-size: 3em;
     font-weight: bold;
     font-family: 'PT Serif', serif;
 }
 
 .about {
-    font-size: 30px;
+    font-size: 2.5em;
 }
 
 .moreabout {
-    font-size: 14px;
+    font-size: 2em;
     margin-top: 23px;
     font-family: 'Fira Sans', sans-serif;
 }
 
 .buttons {
-    margin-top: 35px;
+    margin-top: 2.2em;
+    font-size: 16px;
 }
 
 .btn {
@@ -87,8 +91,8 @@
     color: rgb(240, 234, 234);
     background-color: rgb(25, 129, 233);
     font-weight: bold;
-    font-size: 21px;
-    margin: 0 3px;
+    font-size: 2em;
+    margin: 3px 3px;
     cursor: pointer;
 
 }
@@ -109,15 +113,15 @@
 }
 
 .contactForm {
-    padding: 34px;
-    padding-top: 144px;
+    padding: 0 34px;
     font-family: 'PT Serif', serif;
+    margin: 88px;
 
 }
 
 .contactForm h1 {
     font-family: 'Source Code Pro', monospace;
-    padding: 12px 0;
+    /* padding: 12px 0; */
 }
 
 .contactForm form div {
@@ -127,16 +131,20 @@
 }
 
 .contactForm form div input {
-    width: 26vw;
+    /* width: 26vw; */
     border-radius: 5px;
     margin: 6px 0 0 0;
     padding: 4px;
 }
+.contactForm form{
+    margin: 0 40px;
+}
 
 #emailHelp {
-    font-size: 10px;
-    color: blueviolet;
+    font-size: 11px;
+    color: midnightblue;
     margin: 0 5px;
+    padding: 3px 0 0 0;
     text-decoration: dotted;
 }
 #form-check{
@@ -153,13 +161,102 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
-.blogContainer h1{
+.blogContainer{
+    margin: 40px 90px;
+}
+
+h1{
     font-family: 'Fira Sans', sans-serif;
     margin: 23px;
 }
 
-.blogItem p{
+p{
     font-family: 'Source Code Pro', monospace;
+}
+
+.intro{
+    margin: 50px 90px;
+}
+
+.intro h2{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px;
+}
+
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    margin: 12px;
+}
+
+.skill container{
+    padding: 12px;
+}
+
+.skillItem{
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.hundered{
+    width: 265px;
+    background-color: red;
+}
+.fifty{
+    width: 125px;
+    background-color: aqua;
+}
+.t5{
+    width: 75px;
+    background-color: blueviolet;
+}
+
+.sidebarGo{
+    transform: translate(-443px, 0);
+    position: absolute;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.cross{
+    margin-left: 185px;
+    margin-top: 10px;
+}
+
+@media (min-width: 1615px) {
+    *{
+        /*background-color: rgb(178 44 44); */
+    }
+    .buttons{
+        font-size: 6px;
+    }
+    .devInfo{
+        font-size: 10px;
+    }
+    .devPic{
+        display: none;
+    }
+    .intro, .blogContainer, .contactForm{
+        margin: 50px 8px;
+    }
 }
 
 
